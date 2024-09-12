@@ -1,0 +1,51 @@
+#main1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img{
+    max-width: 500px;
+}
+
+@keyframes Slideleft{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+img#dan{
+    animation-name: Slideleft;
+    animation-duration: 2s;
+    z-index: 1;
+}
+
+@keyframes Rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+img#drum{
+    animation-name: Rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#main2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button{
+    background-color: ;
+}
